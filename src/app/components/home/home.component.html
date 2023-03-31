@@ -1,0 +1,18 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th>id</th>
+        <th>Name</th>
+        <th>Surname</th>
+        <th>age</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users | ageFilter: 18">
+        <td>{{ user.id }}</td>
+        <td>{{ user.name }}</td>
+        <td>{{ user.surname }}</td>
+        <td>{{ user.age }}</td>
+      </tr>
+    </tbody>
+  </table>
